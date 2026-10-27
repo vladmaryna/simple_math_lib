@@ -68,5 +68,6 @@ namespace MathLib
 	int leastCommonMultiple(int a, int b);
 
     // Function to search GCD
-    int GCD(int a, int b);
+    int GCD(int a, int b); 
+    int get_third_angle(int a, int b);
 }
