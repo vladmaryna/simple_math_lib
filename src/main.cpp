@@ -23,3 +23,7 @@ int main(int argc, char* argv[])
     }
     return 0;
 }
+
+int get_third_angle(int a, int b) {
+    return 180 - (a + b);
+}
