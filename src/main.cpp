@@ -35,3 +35,7 @@ int get_third_angle(int a, int b) {
 int get_third_angle(int a, int b) {
     return 180 - (a + b);
 }
+
+int get_third_angle(int a, int b) {
+    return 180 - (a + b);
+}
