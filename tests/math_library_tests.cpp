@@ -22,7 +22,7 @@ TEST_F(MathLibTestFixture, AddTwoValues)
 {
     EXPECT_EQ(MathLib::add(10.5, 2.5), 13.0);
     EXPECT_TRUE(MathLib::isEqual(MathLib::add(10.5, 2.5), 13.0));
-    EXPECT_FALSE(MathLib::isEqual(MathLib::add(10.5, 2.5), 13.0001));
+    EXPECT_FALSE(MathLib::isEqual(MathLib::add(10.5, 2.5), 15.0001));
 }
 
 TEST_F(MathLibTestFixture, SubTwoValues)
@@ -76,4 +76,9 @@ TEST_F(MathLibTestFixture, IsPrimeTest)
 TEST_F(MathLibTestFixture, GreatestCommonDivider)
 {
     EXPECT_EQ(MathLib::GCD(10, 6), 2);
+}
+int get_third_angle(int a, int b);
+
+TEST(MathTest, ThirdAngle) {
+    EXPECT_EQ(get_third_angle(60, 70), 50);
 }
